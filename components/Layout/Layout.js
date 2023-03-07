@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-// import Drawer from "../Drawer/Drawer";
+import Drawer from "../Drawer/Drawer";
 
 // import Sidebar from "../Sidebar/Sidebar";
 import Menubar from "../store/menubar/Menubar";
@@ -13,7 +13,7 @@ function Layout({ user, children, isSecond, isDashboard }) {
     token = localStorage.getItem("token");
   }
   const toggle = () => {
-    // socket.emit("leave_room", ClientRoom);
+    socket.emit("leave_room", ClientRoom);
     setIsOpen(!isOpen);
   };
 
@@ -26,13 +26,13 @@ function Layout({ user, children, isSecond, isDashboard }) {
           </button> */}
 
           <Menubar />
-          {/* <Drawer /> */}
+          <Drawer />
           {children}
         </>
       ) : (
         <>
-          {/* {!isDashboard && <Drawer />}{" "} */}
-          {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
+          {!isDashboard && <Drawer />}{" "} 
+          {/* {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
  
           {children}
         </>
