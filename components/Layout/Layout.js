@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-import Drawer from "../Drawer/Drawer";
+// import Drawer from "../Drawer/Drawer";
 
 // import Sidebar from "../Sidebar/Sidebar";
 import Menubar from "../store/menubar/Menubar";
@@ -26,12 +26,12 @@ function Layout({ user, children, isSecond, isDashboard }) {
           </button> */}
 
           <Menubar />
-          <Drawer />
+          {/* <Drawer /> */}
           {children}
         </>
       ) : (
         <>
-          {!isDashboard && <Drawer />}{" "} 
+          {/* {!isDashboard && <Drawer />}{" "}  */}
           {/* {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
  
           {children}

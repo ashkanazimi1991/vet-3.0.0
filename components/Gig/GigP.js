@@ -55,13 +55,82 @@ function GigP() {
             
             <Tabs isLazy isFitted dir='rtl'  >
                   <TabList  color="gray.500">
-                    <Tab>خدمات تامینی</Tab>
-                    <Tab>مشاوره ای</Tab>
+                    <Tab>مشاوره</Tab>
+                    <Tab>تامین</Tab>
                     <Tab>جامع</Tab>
                 </TabList>
                 
                 <TabPanels>
                     {/* ...................................................basic................................................... */}
+                    <TabPanel>
+                        <Desend/>
+                     
+                        <div className='flex flex-col  justify-between py-2  items-center w-full'>
+                      
+            <p className='text-gray-400 text-right text-sm px-5 py-2 mb-2'>کاهش چشمگیر تلفات  </p>
+                      
+
+                            <div className='flex flex-row border-t-2 border-gray-600 py-2 w-full'>
+                                    <div className='flex justify-center items-center w-3/4'>
+                                        <p className='text-right w-full pr-4 text-sm text-gray-400'>ارائه برترین برندهای تجهیزات پرورشی </p>
+                                        </div>
+                                        <div className='flex justify-center items-center w-1/4'>
+                                        <Checkbox defaultChecked isDisabled  colorScheme='green'></Checkbox>
+                                      </div>
+                            </div>
+
+
+                            
+                           
+                            
+
+                            <div className='flex flex-row border-t-2 border-gray-600 py-2 w-full'>
+                                    <div className='flex justify-center items-center w-3/4'>
+                                        <p className='text-right w-full pr-4 text-sm text-gray-400'>ارائه برترین برندهای تجهیزات پرورشی </p>
+                                        </div>
+                                        <div className='flex justify-center items-center w-1/4'>
+                                        <Checkbox defaultChecked isDisabled  colorScheme='green'></Checkbox>
+                                      </div>
+                            </div>
+
+                            <div className='flex flex-row border-t-2 border-gray-600 py-2 w-full'>
+                                    <div className='flex justify-center items-center w-3/4'>
+                                        <p className='text-right w-full pr-4 text-sm text-gray-400'>ارائه برترین برندهای تجهیزات پرورشی </p>
+                                        </div>
+                                        <div className='flex justify-center items-center w-1/4'>
+                                        <Checkbox defaultChecked isDisabled  colorScheme='green'></Checkbox>
+                                      </div>
+                            </div>
+
+                            <div className='flex flex-row border-t-2 border-gray-600 py-2 w-full'>
+                                    <div className='flex justify-center items-center w-3/4'>
+                                        <p className='text-right w-full pr-4 text-sm text-gray-400'>ارائه برترین برندهای تجهیزات پرورشی </p>
+                                        </div>
+                                        <div className='flex justify-center items-center w-1/4'>
+                                        <Checkbox defaultChecked isDisabled  colorScheme='green'></Checkbox>
+                                      </div>
+                            </div>
+
+                            <div className='flex flex-row border-t-2 border-gray-600 py-2 w-full'>
+                                    <div className='flex justify-center items-center w-3/4'>
+                                        <p className='text-right w-full pr-4 text-sm text-gray-400'>ارائه برترین برندهای تجهیزات پرورشی </p>
+                                        </div>
+                                        <div className='flex justify-center items-center w-1/4'>
+                                        <Checkbox defaultChecked isDisabled  colorScheme='green'></Checkbox>
+                                      </div>
+                            </div>
+
+                            
+
+
+                        </div>
+                    </TabPanel>
+
+
+
+
+
+{/* ............................................................standard........................................................... */}
                     <TabPanel>
                         <Radial/>
                      
@@ -127,70 +196,7 @@ function GigP() {
 
                         </div>
                     </TabPanel>
-{/* ............................................................standard........................................................... */}
-                    <TabPanel>
-                        <Desend/>
-                     
-                        <div className='flex flex-col  justify-between py-2  items-center w-full'>
-                      
-            <p className='text-gray-400 text-right text-sm px-5 py-2 mb-2'>کاهش چشمگیر تلفات  </p>
-                      
-
-                            <div className='flex flex-row border-t-2 border-gray-600 py-2 w-full'>
-                                    <div className='flex justify-center items-center w-3/4'>
-                                        <p className='text-right w-full pr-4 text-sm text-gray-400'>ارائه برترین برندهای تجهیزات پرورشی </p>
-                                        </div>
-                                        <div className='flex justify-center items-center w-1/4'>
-                                        <Checkbox defaultChecked isDisabled  colorScheme='green'></Checkbox>
-                                      </div>
-                            </div>
-
-
-                            
-                           
-                            
-
-                            <div className='flex flex-row border-t-2 border-gray-600 py-2 w-full'>
-                                    <div className='flex justify-center items-center w-3/4'>
-                                        <p className='text-right w-full pr-4 text-sm text-gray-400'>ارائه برترین برندهای تجهیزات پرورشی </p>
-                                        </div>
-                                        <div className='flex justify-center items-center w-1/4'>
-                                        <Checkbox defaultChecked isDisabled  colorScheme='green'></Checkbox>
-                                      </div>
-                            </div>
-
-                            <div className='flex flex-row border-t-2 border-gray-600 py-2 w-full'>
-                                    <div className='flex justify-center items-center w-3/4'>
-                                        <p className='text-right w-full pr-4 text-sm text-gray-400'>ارائه برترین برندهای تجهیزات پرورشی </p>
-                                        </div>
-                                        <div className='flex justify-center items-center w-1/4'>
-                                        <Checkbox defaultChecked isDisabled  colorScheme='green'></Checkbox>
-                                      </div>
-                            </div>
-
-                            <div className='flex flex-row border-t-2 border-gray-600 py-2 w-full'>
-                                    <div className='flex justify-center items-center w-3/4'>
-                                        <p className='text-right w-full pr-4 text-sm text-gray-400'>ارائه برترین برندهای تجهیزات پرورشی </p>
-                                        </div>
-                                        <div className='flex justify-center items-center w-1/4'>
-                                        <Checkbox defaultChecked isDisabled  colorScheme='green'></Checkbox>
-                                      </div>
-                            </div>
-
-                            <div className='flex flex-row border-t-2 border-gray-600 py-2 w-full'>
-                                    <div className='flex justify-center items-center w-3/4'>
-                                        <p className='text-right w-full pr-4 text-sm text-gray-400'>ارائه برترین برندهای تجهیزات پرورشی </p>
-                                        </div>
-                                        <div className='flex justify-center items-center w-1/4'>
-                                        <Checkbox defaultChecked isDisabled  colorScheme='green'></Checkbox>
-                                      </div>
-                            </div>
-
-                            
-
-
-                        </div>
-                    </TabPanel>
+          
 {/* ............................................................premium........................................................... */}
 
                     <TabPanel>
