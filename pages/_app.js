@@ -1,35 +1,15 @@
-import "../styles/globals.css";
-import "../styles/login.css";
-import "../styles/Sidebar.css";
-import "../styles/Tabs.scss";
-import { useState , useEffect } from "react";
-import Router from "next/router";
-// import BetweenPage from "../components/Loading/betweenPage";
-// import store from "../components/redux/store";
-import { Provider } from "react-redux";
-import { PersistGate } from 'redux-persist/integration/react'
-import {store , persistedStore} from "../components/redux/store"
+import '@/styles/globals.css'
+import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 
-
-function MyApp({ Component, pageProps }) {
-  // const [loading, setLoading] = useState(false);
-  // Router.events.on("routeChangeStart", url => {
-  //   setLoading(true);
-  // });
-  // Router.events.on("routeChangeComplete", url => {
-  //   setLoading(false);
-  // });
- 
-  return (
-    <>
-    <Provider store={store}>
-      <PersistGate loading={null} persistor={persistedStore}>
-        {/* {loading && } */}
-         <Component {...pageProps}/>
-      </PersistGate>
-    </Provider>
-    </>
-  );
+const fonts = {
+  body:'IRANSansWeb',
 }
+const theme= extendTheme({fonts})
 
-export default MyApp;
+export default function App({ Component, pageProps }) {
+  return (
+    <ChakraProvider theme={theme}>
+    <Component {...pageProps} />
+  </ChakraProvider>
+  )
+}

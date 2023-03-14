@@ -15,37 +15,37 @@ export default class SliderOne extends Component {
           breakpoint: 1200,
           settings: {
             slidesToShow: 5,
-            slidesToScroll: 1,
+            slidesToScroll: 2,
             infinite: true,
-            dots: true,
+            dots: false,
           }},
         {
           breakpoint: 1000,
           settings: {
             slidesToShow: 4,
-            slidesToScroll: 1,
+            slidesToScroll: 2,
             infinite: true,
-            dots: true,
+            dots: false,
           }},{
           breakpoint: 768,
           settings: {
             slidesToShow: 4,
-            slidesToScroll: 1,
+            slidesToScroll: 2,
             infinite: true,
-            dots: true,
+            dots: false,
           }},{
           breakpoint: 480,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 1,
+            slidesToScroll: 2,
             infinite: true,
-            dots: true,
+            dots: false,
           },
         },
       ],
     };
     return (
-      <div style={ {background: ""}}>
+      <div>
         <Slider {...settings}>
           <div>
             <div className={styles.card}>

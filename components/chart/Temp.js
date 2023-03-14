@@ -6,7 +6,7 @@ const ReactApexChart = dynamic(() => import ("react-apexcharts"), {ssr:false});
 
 
 
-class Desend extends React.Component {
+class Temp extends React.Component {
 
     constructor(props) {
         super(props);
@@ -14,47 +14,36 @@ class Desend extends React.Component {
         this.state = {
         
           series: [{
-            name: 'کاهش هزینه',
-            data: [50, 40, 28, 70, 42, 80, 50 ]
+            name: 'رطوبت',
+            data: [50, 40, 30, 70, 42, 80, 50 ]
           }, {
-            name: 'افزیش راندمان',
-            data: [30, 32, 45, 32, 34, 52, 100]
+            name: 'دما',
+            data: [30, 32, 28, 32, 27, 26, 28]
           }],
           options: {
             chart: {
               height: 350,
-              type: 'area',
-         
+              type: 'area'
             },
             dataLabels: {
-              enabled: false,
-              
-         
+              enabled: false
             },
             stroke: {
-              curve: 'smooth',
-              
-             
+              curve: 'smooth'
             },
             xaxis: {
-              type: 'datetime',        
+              type: 'datetime',
               categories: ["2018-09-10T00:00:00.000Z", "2018-09-11T01:30:00.000Z", "2018-09-12T02:30:00.000Z", "2018-09-13T03:30:00.000Z", "2018-09-14T04:30:00.000Z", "2018-09-15T05:30:00.000Z", "2018-09-16T06:30:00.000Z"]
             },
-       
             tooltip: {
-                 x: {
+              x: {
                 format: 'dd/MM/yy HH:mm'
               },
-             
             },
-        
-            
-            
           },
         
         
         };
-        
       }
 
     
@@ -65,7 +54,7 @@ class Desend extends React.Component {
 
 
     <div id="chart">
-<ReactApexChart options={this.state.options} series={this.state.series}  type="area" height={350} />
+<ReactApexChart options={this.state.options} series={this.state.series} type="area" height={250} />
 </div>
   
 
@@ -75,4 +64,4 @@ class Desend extends React.Component {
     }
 
 
-export default Desend;
+export default Temp;
